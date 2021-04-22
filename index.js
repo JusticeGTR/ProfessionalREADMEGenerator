@@ -33,6 +33,11 @@ const questions = [
             name: 'contributions',
           },
           {
+              type:'input',
+              message:'Who helped contribute to your project?',
+              name:'credits',
+          },
+          {
             type: 'input',
             message: 'How do you test the project?',
             name: 'test',
@@ -43,12 +48,12 @@ const questions = [
             name: 'license',
             choices: ['GNU GPLv3', 'MIT', 'Apache 2.0', 'ISC', ' GNU GPLv2', 'none'],
           },
-          {
-            type: 'checklist',
-            message: 'What badges would you like to use?',
-            name: 'badges',
-            choices: ['GitHub License', 'GitHub Forks', 'GitHub Repo Stars', 'GitHub package.JSON Version', 'GitHub Commit Activity', 'GitHub Contributors', 'none'],
-          },
+        //   {
+        //     type: 'checklist',
+        //     message: 'What badges would you like to use?',
+        //     name: 'badges',
+        //     choices: ['GitHub License', 'GitHub Forks', 'GitHub Repo Stars', 'GitHub package.JSON Version', 'GitHub Commit Activity', 'GitHub Contributors', 'none'],
+        //   },
           {
             type: 'input',
             message: 'Enter your github username:',
@@ -59,12 +64,12 @@ const questions = [
             message: 'Enter your email:',
             name: 'email',
           },
-          {
-            type: 'list',
-            message: 'Would you like a Table of Contents?',
-            name: 'tableOfContents',
-            choices: ['Yes', 'No'],
-          },
+        //   {
+        //     type: 'list',
+        //     message: 'Would you like a Table of Contents?',
+        //     name: 'tableOfContents',
+        //     choices: ['Yes', 'No'],
+        //   },
     ];
 
 

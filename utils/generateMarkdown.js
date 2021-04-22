@@ -66,6 +66,17 @@ function generateMarkdown(data) {
   # ${data.title}
 ## Description
 ${data.description}
+## Installation
+${data.instructions}
+## Usage
+${data.usage}
+## How to Contribute
+${data.contributions}
+## Credits
+${data.credits}
+## Tests
+${data.tests}
+${renderLicenseSection()}
 
 `;
 }
