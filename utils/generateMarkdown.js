@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-license = response.license
+license = data.license
 function renderLicenseBadge(license) {
   switch(license) {
     case 'none':
@@ -22,6 +22,7 @@ function renderLicenseBadge(license) {
         response = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
         break;
   }
+  return response;
 }
 
 // TODO: Create a function that returns the license link
@@ -47,6 +48,7 @@ function renderLicenseLink(license) {
         response = 'https://choosealicense.com/licenses/gpl-2.0/'
         break;
   }
+  return response;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -60,7 +62,10 @@ if(license === 'none') {
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+## Description
+${data.description}
 
 `;
 }

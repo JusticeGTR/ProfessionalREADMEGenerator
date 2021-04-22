@@ -6,12 +6,11 @@ const created = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 // project title, description, installation instructions, usage info, contribution guidelines,
 //test instructions, license, badges, github username, email adress
-inquirer
-    .prompt ([
+const questions = [
         {
             type: 'input',
             message: 'What is your project\'s title?',
-            name: 'projectTitle',
+            name: 'title',
           },
           {
             type: 'input',
@@ -66,10 +65,8 @@ inquirer
             name: 'tableOfContents',
             choices: ['Yes', 'No'],
           },
-        ])
-    .then((response) =>
-    writeToFile('README.md', created(response))
-    );
+    ];
+
 
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
@@ -82,7 +79,13 @@ function writeToFile(filename, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+.prompt (questions) 
+    .then((response) =>
+        writeToFile('README.md', created(response))
+);
+}
 
 // Function call to initialize app
 init();
