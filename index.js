@@ -50,8 +50,8 @@ const questions = [
           },
           {
             type: 'input',
-            message: 'Enter your github username:',
-            name: 'gitUserName',
+            message: 'Enter your github link:',
+            name: 'github',
           },
           {
             type: 'input',

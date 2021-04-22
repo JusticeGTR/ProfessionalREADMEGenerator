@@ -88,6 +88,9 @@ ${data.contributions}
 ${data.credits}
 ## Tests
 ${data.tests}
+## Contact
+[Email me!](${data.email})
+[GitHub](${data.github})
 `;
 }
 
