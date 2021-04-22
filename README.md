@@ -1,7 +1,7 @@
 
-  # Professional Makrdown Generator
+  # project
 ## Description
-This is a markdown generator that you can use to create professional README files for your coding projects! It can be used for any type of project in order to really make it look like you know what your'e doing!
+it's a project
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,21 +9,21 @@ This is a markdown generator that you can use to create professional README file
 - [Contributions](#contributions)
 - [Credits](#credits)
 - [Tests](#tests)
+- [Contact](#contact)
 ## Installation
-You'll need vsCode or something similar, and will need to install inquirer from the npm database. Once you create your .gitignore, use npm init -y in an integrated terminal. Next, input npm install inquirer. 
+install it
 ## Usage
-Once everything is installed, input node index.js to initiate the app and follow the promps! At the end, you'll have your brand new README!
+use it
 ## License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+[View License](https://choosealicense.com/licenses/gpl-3.0/)
 
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-    [View License](https://choosealicense.com/licenses/mit/)
-    
 ## Contributions
-Contributions and code for new functionality is welcome. Submit pull requests for suggested additions and they will be added on a case by case basis.
+contribute to it
 ## Credits
-Big thanks to all contributors and the instructors for guidance.
+a few people
 ## Tests
-Initiate node index.js to test and see what it outputs, and make changes as necessary.
+test it
 ## Contact
-[Email me!](justinlindseyLHR@gmail.com)
-[GitHub](https://github.com/JusticeGTR)
+[Email me!](email)  
+[GitHub](github)

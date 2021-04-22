@@ -4,25 +4,18 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case 'none':
-      response = ''
-      break;
+      return ''
     case 'GNU GPLv3':
-      response = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
-      break;
+      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
     case 'MIT':
-      response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-      break;
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     case 'Apache 2.0':
-      response = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-      break;
+      return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
     case 'ISC':
-      response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
-      break;
+      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
     case 'GNU GPLv2':
-      response = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
-      break;
+      return '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
   }
-  return response;
 }
 
 // TODO: Create a function that returns the license link
@@ -30,25 +23,18 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch (license) {
     case 'none':
-      response = ''
-      break;
+      return ''
     case 'GNU GPLv3':
-      response = 'https://choosealicense.com/licenses/gpl-3.0/'
-      break;
+      return 'https://choosealicense.com/licenses/gpl-3.0/'
     case 'MIT':
-      response = 'https://choosealicense.com/licenses/mit/'
-      break;
+      return 'https://choosealicense.com/licenses/mit/'
     case 'Apache 2.0':
-      response = 'https://choosealicense.com/licenses/apache-2.0/'
-      break;
+      return 'https://choosealicense.com/licenses/apache-2.0/'
     case 'ISC':
-      response = 'https://choosealicense.com/licenses/isc/'
-      break;
+      return 'https://choosealicense.com/licenses/isc/'
     case 'GNU GPLv2':
-      response = 'https://choosealicense.com/licenses/gpl-2.0/'
-      break;
+      return 'https://choosealicense.com/licenses/gpl-2.0/'
   }
-  return response;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -57,10 +43,9 @@ function renderLicenseSection(license) {
   if (license === 'none') {
     return ''
   } else {
-    return `
-    ${renderLicenseBadge(license)}
-    [View License](${renderLicenseLink(license)})
-    `
+    return `${renderLicenseBadge(license)}  
+[View License](${renderLicenseLink(license)})
+`
   }
 }
 // TODO: Create a function to generate markdown for README
@@ -76,6 +61,7 @@ ${data.description}
 - [Contributions](#contributions)
 - [Credits](#credits)
 - [Tests](#tests)
+- [Contact](#contact)
 ## Installation
 ${data.instructions}
 ## Usage
@@ -89,7 +75,7 @@ ${data.credits}
 ## Tests
 ${data.tests}
 ## Contact
-[Email me!](${data.email})
+[Email me!](${data.email})  
 [GitHub](${data.github})
 `;
 }
