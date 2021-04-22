@@ -1,7 +1,7 @@
 
-  # ;lajsdf
+  # project
 ## Description
-;lkjasdf
+it's a project
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,13 +10,15 @@
 - [Credits](#credits)
 - [Tests](#tests)
 ## Installation
-;lkajsdf
+install it
 ## Usage
-;lkajsdf
-
+use it
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+https://choosealicense.com/licenses/mit/
 ## Contributions
-;lkjasdf
+they can
 ## Credits
-;lkajsdf
+lots
 ## Tests
-undefined
+test it
