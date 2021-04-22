@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
-const created = require('./utils/generateMarkdown')
+const create = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 // project title, description, installation instructions, usage info, contribution guidelines,
@@ -48,12 +48,6 @@ const questions = [
             name: 'license',
             choices: ['GNU GPLv3', 'MIT', 'Apache 2.0', 'ISC', ' GNU GPLv2', 'none'],
           },
-        //   {
-        //     type: 'checklist',
-        //     message: 'What badges would you like to use?',
-        //     name: 'badges',
-        //     choices: ['GitHub License', 'GitHub Forks', 'GitHub Repo Stars', 'GitHub package.JSON Version', 'GitHub Commit Activity', 'GitHub Contributors', 'none'],
-        //   },
           {
             type: 'input',
             message: 'Enter your github username:',
@@ -82,7 +76,7 @@ function init() {
     inquirer
 .prompt (questions) 
     .then((response) =>
-        writeToFile('README.md', created(response))
+        writeToFile('README.md', create(response))
 );
 }
 
