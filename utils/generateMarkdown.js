@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-license = data.license
+let markdownData = data
+let license = markdownData.license
 function renderLicenseBadge(license) {
   switch(license) {
     case 'none':
@@ -66,18 +67,24 @@ function generateMarkdown(data) {
   # ${data.title}
 ## Description
 ${data.description}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Credits](#credits)
+- [Tests](#tests)
 ## Installation
 ${data.instructions}
 ## Usage
 ${data.usage}
-## How to Contribute
+${renderLicenseSection()}
+## Contributions
 ${data.contributions}
 ## Credits
 ${data.credits}
 ## Tests
 ${data.tests}
-${renderLicenseSection()}
-
 `;
 }
 

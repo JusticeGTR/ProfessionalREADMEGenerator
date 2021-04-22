@@ -64,12 +64,6 @@ const questions = [
             message: 'Enter your email:',
             name: 'email',
           },
-        //   {
-        //     type: 'list',
-        //     message: 'Would you like a Table of Contents?',
-        //     name: 'tableOfContents',
-        //     choices: ['Yes', 'No'],
-        //   },
     ];
 
 
