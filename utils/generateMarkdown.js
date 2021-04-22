@@ -57,9 +57,10 @@ function renderLicenseSection(license) {
   if (license === 'none') {
     return ''
   } else {
-    return `${renderLicenseBadge(license)}
-    ${renderLicenseLink(license)}`
-
+    return `
+    ${renderLicenseBadge(license)}
+    [View License](${renderLicenseLink(license)})
+    `
   }
 }
 // TODO: Create a function to generate markdown for README
