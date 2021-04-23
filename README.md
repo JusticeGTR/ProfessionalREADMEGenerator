@@ -14,9 +14,10 @@ This is a markdown generator that you can use to create professional README file
 You'll need vsCode or something similar, and will need to install inquirer from the npm database. Once you create your .gitignore, use npm init -y in an integrated terminal. Next, input npm install inquirer.
 ## Usage
 Once everything is installed, input node index.js to initiate the app and follow the promps! At the end, you'll have your brand new README!
-[Demonstration pictures]()
-[Demonstration pictures]()
-[Demonstration pictures]()
+[Demonstration Video](https://drive.google.com/file/d/1qe7aoUZbYHGA0P5ZflXnsbDTEhZVFO3a/view?usp=sharing)
+[Demonstration pictures](https://github.com/JusticeGTR/ProfessionalREADMEGenerator/blob/main/assets/media/Screenshot%20(96).png)
+[Demonstration pictures](https://github.com/JusticeGTR/ProfessionalREADMEGenerator/blob/main/assets/media/Screenshot%20(97).png)
+[Demonstration pictures](https://github.com/JusticeGTR/ProfessionalREADMEGenerator/blob/main/assets/media/Screenshot%20(98).png)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
